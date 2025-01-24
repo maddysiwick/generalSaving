@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>chooseLanguage</title>
+    </head>
+    <body>
+        <h1>Choose a language</h1>
+        
+        {% for language in languages %}
+          <a href="{% url 'docview' language.pk %}">{{language.lang}}</a>
+        {% endfor %}
+    </body>
+</html>

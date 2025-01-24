@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <a href="{% url 'langchoice' %}">languages</a>
+    </head>
+    <body>
+        <h1>{{language.lang}}</h1>
+        
+        {% for doctor in doctors %}
+          {{doctor.name}}
+        {% endfor %}
+    </body>
+</html>
