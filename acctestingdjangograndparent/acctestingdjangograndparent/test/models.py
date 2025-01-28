@@ -15,3 +15,4 @@ class Doctor(models.Model):
     location=models.PointField(default=Point(0,0),blank=True)
     def __str__(self):
         return self.name
+    

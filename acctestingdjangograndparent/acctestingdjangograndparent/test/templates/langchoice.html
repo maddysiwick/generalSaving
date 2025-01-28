@@ -6,6 +6,7 @@
     </head>
     <body>
         <h1>Choose a language</h1>
+        <p1>its only gonna show stuff within 10km of my house</p1>
         
         {% for language in languages %}
           <a href="{% url 'docview' language.pk %}">{{language.lang}}</a>
